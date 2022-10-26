@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "472181946916",
+    "project_id": "salonapp-8cecc",
+    "storage_bucket": "salonapp-8cecc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:472181946916:android:74594b949ff0b4be6876b1",
+        "android_client_info": {
+          "package_name": "com.nelius.sw_engineering_ibl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "472181946916-63rrbc0jjqabmj06uufomh9chl7gp6b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5vvLviWTHVY6-pLWcDTPSGrdUJkO_zvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "472181946916-63rrbc0jjqabmj06uufomh9chl7gp6b8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
