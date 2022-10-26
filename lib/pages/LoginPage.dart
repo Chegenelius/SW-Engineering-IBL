@@ -1,7 +1,11 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:sw_engineering_ibl/pages/SalonServices.dart';
 import '../Allwidgets/progressDialog.dart';
+import '../main.dart';
+import 'RegistrationPage.dart';
+
 
 
 class LoginPage extends StatelessWidget {
@@ -25,7 +29,7 @@ class LoginPage extends StatelessWidget {
             children: [
               SizedBox(height: 1.0),
               Image(
-                image: AssetImage("images/logo.png"),
+                image: AssetImage("images/blonde-hair.png"),
                 width: 250.0,
                 height: 250.0,
                 alignment: Alignment.center,
@@ -57,7 +61,8 @@ class LoginPage extends StatelessWidget {
                     TextField(
                       controller: passwordTextEditingController,
                       obscureText: true,
-                      decoration: InputDecoration(labelText: "Password", labelStyle: TextStyle( fontSize: 14.0,
+                      decoration: InputDecoration(labelText: "Password",
+                        labelStyle: TextStyle( fontSize: 14.0,
                       ),
                         hintStyle: TextStyle(
                           fontSize: 20.0,
@@ -136,7 +141,7 @@ class LoginPage extends StatelessWidget {
       //check if user data exist in the database
       usersRef.child(firebaseUser.uid).once().then((snap){
         if(snap != null){
-          Navigator.pushNamedAndRemoveUntil(context, RoleScreen.idScreen, (route) => false);
+          Navigator.pushNamedAndRemoveUntil(context, SalonServices.idScreen, (route) => false);
           displayToastMessage("You have login in successfully", context);
         }else{
           Navigator.pop(context);
@@ -149,3 +154,6 @@ class LoginPage extends StatelessWidget {
       Navigator.pop(context);
       displayToastMessage("Error occurred", context);
     }
+  }
+
+  void displayToastMessage(String s, BuildContext context) {}}
