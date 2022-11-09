@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Ambulance Ride App"),
+        title: const Text("Salon App"),
         centerTitle: true,
         backgroundColor: Colors.red,
       ),
@@ -107,7 +107,6 @@ class LoginPage extends StatelessWidget {
               ),
               TextButton(
                 onPressed: (){
-                  //Navigator.pushNamedAndRemoveUntil(context, RegistrationPage.idScreen, (route) => false);
                   Navigator.push(context, MaterialPageRoute(builder: (context) => RegistrationPage()));
                 },
                 child: Text(
