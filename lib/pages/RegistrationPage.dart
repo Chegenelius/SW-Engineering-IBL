@@ -19,7 +19,7 @@ class RegistrationPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Register Here"),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.purple,
       ),
       backgroundColor:  Colors.white,
       body: SingleChildScrollView(
@@ -29,7 +29,7 @@ class RegistrationPage extends StatelessWidget {
             children: [
               SizedBox(height: 1.0),
               Image(
-                image: AssetImage("images/logo.png"),
+                image: AssetImage("images/scissors.png"),
                 width: 250.0,
                 height: 250.0,
                 alignment: Alignment.center,
@@ -113,7 +113,7 @@ class RegistrationPage extends StatelessWidget {
                         shape: new RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(24.0)
                         ),
-                        primary: Colors.red, // background
+                        primary: Colors.purpleAccent, // background
                         onPrimary: Colors.white, // foreground
                       ),
                       onPressed: () {

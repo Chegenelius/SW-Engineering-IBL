@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Salon App"),
         centerTitle: true,
-        backgroundColor: Colors.red,
+        backgroundColor: Colors.purple,
       ),
       backgroundColor:  Colors.white,
       body: SingleChildScrollView(
@@ -36,7 +36,8 @@ class LoginPage extends StatelessWidget {
               ),
               SizedBox(height: 45.0,),
               Text("Login",
-                style: TextStyle(fontSize: 24.0, fontFamily: "Brand Bold"),
+                style: TextStyle(fontSize: 24.0,
+                    fontFamily: "Brand Bold"),
                 textAlign: TextAlign.center,
               ),
               Padding(
@@ -77,7 +78,7 @@ class LoginPage extends StatelessWidget {
                         shape: new RoundedRectangleBorder(
                             borderRadius: new BorderRadius.circular(24.0)
                         ),
-                        primary: Colors.red, // background
+                        primary: Colors.purpleAccent, // background
                         onPrimary: Colors.white, // foreground
                       ),
                       onPressed: () {
